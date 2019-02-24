@@ -121,10 +121,29 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 
 #######################################################
-# Other commands refer to the original docs
+# virtualenvwrapper
+# virtualenvwrapper provides a set of commands which makes working with virtual environments much more pleasant. It also places all your virtual environments in one place.
+# To install (make sure virtualenv is already installed):
+pip install virtualenvwrapper
+export WORKON_HOME=~/Envs
+source /usr/local/bin/virtualenvwrapper.sh
 
+#1. Create a virtual environment: (This creates the my_project folder inside ~/Envs)
+mkvirtualenv my_project
+#2. Work on a virtual environment:
+$ workon my_project
 
+#1+2. Alternatively, you can make a project, which creates the virtual environment, and also a project directory inside $WORKON_HOME, which is cd-ed into when you workon myproject.
+mkproject myproject
 
+#3. Deactivating is still the same:
+deactivate
+
+#4. Delete the env
+rmvirtualenv venv
+
+# More commands
+https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html
 
 
 
