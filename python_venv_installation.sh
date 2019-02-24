@@ -131,7 +131,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 #1. Create a virtual environment: (This creates the my_project folder inside ~/Envs)
 mkvirtualenv my_project
 #2. Work on a virtual environment:
-$ workon my_project
+workon my_project
 
 #1+2. Alternatively, you can make a project, which creates the virtual environment, and also a project directory inside $WORKON_HOME, which is cd-ed into when you workon myproject.
 mkproject myproject
