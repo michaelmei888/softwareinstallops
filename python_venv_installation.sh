@@ -24,7 +24,8 @@ brew install python
 #2.potentially the Homebrew version of Python 2 installed, and 
 #3.the Homebrew version of Python 3 as well.
 
-# to launch the default python installed on MAC OSX
+# to launch the default python installed on MAC OSX, forcing linking it to the brew python 3
+brew link --overwrite python
 python
 
 # to launch the Homebrew-installed Python 2 interpreter (if any).
