@@ -122,6 +122,12 @@ pip install -r requirements.txt
 
 #######################################################
 # virtualenvwrapper
+# BEGIN WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# virtualenv lets you create many different Python environments. 
+# You should only ever install virtualenv and virtualenvwrapper on your base Python installation 
+# (i.e. NOT while a virtualenv is active) so that the same release is shared by all Python environments that depend on it.
+# END WARNING   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 # virtualenvwrapper provides a set of commands which makes working with virtual environments much more pleasant. It also places all your virtual environments in one place.
 # To install (make sure virtualenv is already installed):
 pip install virtualenvwrapper
