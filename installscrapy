@@ -1,0 +1,8 @@
+# requires python_venv_installation.sh
+
+#ref: http://doc.scrapy.org/en/latest/intro/install.html#intro-install
+
+#################################################
+# Using a virtual environment (recommended)
+################################################
+
