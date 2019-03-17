@@ -38,3 +38,14 @@ cd tutorial
 
 #Run the spider
 scrapy crawl quotes
+
+#################################################
+# Deploy a scrapyd program
+################################################
+
+#server side deamon to run the scrapy service.
+#access it via http restful interfaces
+pip install scrapyd
+
+#to pack and deploy the egg file via scrapy versionadd interface
+pip install scrapyd scrapyd-client
