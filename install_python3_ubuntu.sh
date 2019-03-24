@@ -12,8 +12,8 @@ sudo apt-get install python3.6
 #If not, use your distribution’s package manager. For example on Fedora, you would use dnf:
 sudo dnf install python3
 
-#install pip
-sudo apt install python-pip
+#install pip3
+sudo apt install python3-pip
 
 #verify
 python3 --version
