@@ -13,7 +13,7 @@ sudo apt-get install python3.6
 sudo dnf install python3
 
 #install pip
-apt install python-pip
+sudo apt install python-pip
 
 #verify
 python3 --version
