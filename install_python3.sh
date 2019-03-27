@@ -27,3 +27,14 @@ command -v pip
 command -v pip3
 
 #However, when using virtual environments (described below), you don’t need to care about that.
+
+###################################
+############ FOR DEBIAN ##########
+###################################
+
+sudo apt update
+
+pip3 --version
+
+sudo apt install python3-pip
+
