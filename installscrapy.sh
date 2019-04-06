@@ -83,6 +83,7 @@ cat scrapyd.conf
 #daemonstatus.json = scrapyd.webservice.DaemonStatus
 
 #to pack the egg file to the current dir named as release.egg
-scrapyd-deploy --build-egg=./release.egg
+scrapyd-deploy -p tutorial -v 1 --build-egg=./releasev1.egg
 
 #deploy the egg file via scrapy versionadd interface
+curl http://35.243.177.237:6800/addversion.json -F project=tutorial -F version=1 -F egg=@releasev1.egg
