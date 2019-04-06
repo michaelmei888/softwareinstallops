@@ -48,4 +48,5 @@ scrapy crawl quotes
 pip install scrapyd
 
 #to pack and deploy the egg file via scrapy versionadd interface
-pip install scrapyd scrapyd-client
+pip install git+https://github.com/scrapy/scrapyd-client
+
