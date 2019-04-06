@@ -86,4 +86,8 @@ cat scrapyd.conf
 scrapyd-deploy -p tutorial -v 1 --build-egg=./releasev1.egg
 
 #deploy the egg file via scrapy versionadd interface
-curl http://35.243.177.237:6800/addversion.json -F project=tutorial -F version=1 -F egg=@releasev1.egg
+curl http://{deployed ip}:6800/addversion.json -F project=tutorial -F version=1 -F egg=@releasev1.egg
+
+#schedule the spider via scrapy schedule interface
+curl http://{deployed ip}:6800/schedule.json -d project=tutorial -d spider={spider name in the egg}
+
