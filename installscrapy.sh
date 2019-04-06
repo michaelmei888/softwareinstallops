@@ -82,5 +82,7 @@ cat scrapyd.conf
 #listjobs.json     = scrapyd.webservice.ListJobs
 #daemonstatus.json = scrapyd.webservice.DaemonStatus
 
-#to pack and deploy the egg file via scrapy versionadd interface
+#to pack the egg file to the current dir named as release.egg
+scrapyd-deploy --build-egg=./release.egg
 
+#deploy the egg file via scrapy versionadd interface
