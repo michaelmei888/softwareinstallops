@@ -91,8 +91,6 @@ curl http://{deployed ip}:6800/addversion.json -F project=tutorial -F version=1 
 #schedule the spider via scrapy schedule interface
 curl http://{deployed ip}:6800/schedule.json -d project=tutorial -d spider={spider name in the egg}
 
-For example, if a package should contain a subdirectory with several data files, the files can be arranged like this in the source tree:
-
 #TO INCLUDE ANY FILES IN THE PACKAGE:
 #./setup.py
 #./scrapy.cfg
