@@ -91,3 +91,26 @@ curl http://{deployed ip}:6800/addversion.json -F project=tutorial -F version=1 
 #schedule the spider via scrapy schedule interface
 curl http://{deployed ip}:6800/schedule.json -d project=tutorial -d spider={spider name in the egg}
 
+For example, if a package should contain a subdirectory with several data files, the files can be arranged like this in the source tree:
+
+#TO INCLUDE ANY FILES IN THE PACKAGE:
+#./setup.py
+#./scrapy.cfg
+#....
+#Modify the setup.py to include the following:
+# Automatically created by: scrapyd-deploy
+from setuptools import setup, find_packages
+#package_name = find_packages()
+#print package_name
+##############################################
+#setup(
+#    name         = 'project',
+#    version      = '1.0',
+#    packages     = find_packages(), #All packages: for best practice each deploy must include ONLY 1 project
+#    package_dir  = {find_packages()[0]: 'tutorial'},  #project dir for the first package (project)
+#    package_data = {find_packages()[0]: ['*.json']},  #project file to be included
+#    entry_points = {'scrapy': ['settings = tutorial.settings']},  #specifying the settings for the project
+#)
+
+
+
